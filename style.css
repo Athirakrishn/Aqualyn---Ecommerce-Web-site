@@ -1,0 +1,369 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.nav1{
+  background-color: rgb(10, 10, 161);
+  height: 25px;
+}
+.nav1 a{
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.nav1 a:hover{
+ text-decoration: underline;
+}
+
+.rounded-circle{
+  width: 80px;
+  height: 80px;
+  background-color: rgb(94, 93, 93,0.5);
+
+} 
+.offer-days{
+  display: flex;
+  height: 110px;
+}
+/* #heading{
+  font-size: 2rem ;
+  
+  color: black;
+} */
+ 
+
+
+/* .card img:hover{
+  transform:translate3d(10px) ;
+} */
+.card-text{
+  font-size: 0.9rem;
+}
+.card-title{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-title:hover{
+ text-decoration: underline;
+}
+.card .btn{
+  width: 200px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 110, 221);
+}
+.prize{
+  font-size: 1.2rem;
+  color: black;
+}
+
+.viewbtn1 {
+  display: inline-block; 
+  padding: 10px 20px;
+  background-color: #e09cb0;
+  color: white; 
+  font-size: 1.5rem;             
+  text-decoration: none;    
+  border-radius: 10px;        
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.viewbtn {
+  display: inline-block; 
+  padding: 10px 20px;
+  background-color: #b569e7;
+  color: white; 
+  font-size: 1.5rem;             
+  text-decoration: none;    
+  border-radius: 10px;        
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.footer{
+  background-color: rgb(16, 36, 124);  
+ 
+  width: 100%;
+}
+.footera a{
+  color: rgb(125, 138, 196);text-decoration: none;
+}
+.footera a:hover{
+  text-decoration: underline;
+}
+
+
+/* Base styles (you might have these already or can add them) */
+.footer {
+  background-color: #003366; /* Assuming this is the intended background for the whole footer based on the inner footer tag */
+  color: white;
+}
+
+.footer h1, .footer h3 {
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none; /* Optional: removes underline from links */
+}
+
+.footer .footera a:hover {
+  text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+.footer .fa-brands {
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect for icons */
+}
+
+.footer .fa-brands:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Extra Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .footer .row > [class^="col-"] { /* Target all columns in the footer rows */
+    flex-basis: 100%; /* Make each column take full width */
+    max-width: 100%;
+    text-align: center; /* Ensure text remains centered if not already */
+    margin-bottom: 20px; /* Add some space between stacked columns */
+  }
+
+  .footer .col-3.text-center.text-white,
+  .footer .col-3.text-white.text-center {
+    padding-top: 15px; /* Adjust padding if needed */
+  }
+
+  .footer .text-white.row [class^="col-md-"] {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+   .footer .text-white.row .col-4 { 
+    display: none;
+  }
+
+  .footer .text-white.row .col-md-4 img {
+    display: block;
+    margin: 10px auto 0; /* Center the payment image */
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer .pt-4.pb-5 > .col-3 { /* Target the first four columns */
+    flex-basis: 50%; /* Two columns per row */
+    max-width: 50%;
+    margin-bottom: 25px; /* Space between rows of columns */
+  }
+
+  .footer .text-white.row .col-md-4 {
+    text-align: center; /* Center copyright and payment info if they stack or are side-by-side */
+  }
+   .footer .text-white.row .col-4 {
+    display: none; /* Hide the spacer column if things get tight */
+  }
+    .footer .text-white.row .col-md-4 img {
+    display: block;
+    margin: 10px auto 0; /* Center the payment image */
+  }
+}
+
+
+@media (min-width: 768px) {
+  .footer .col-3.text-center.text-white,
+  .footer .col-3.text-white.text-center {
+    text-align: center !important; 
+  }
+
+  .footer .text-white.row .col-md-4 {
+       }
+   .footer .text-white.row .col-md-4:last-child {
+     /* text-align: right; */
+  }
+    .footer .text-white.row .col-md-4 img {
+   
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+  .footer .pt-4.pb-5 > .col-3 {
+    
+  }
+   .footer .text-white.row .col-md-4:first-child {
+     text-align: left;
+   }
+   .footer .text-white.row .col-md-4:last-child {
+     text-align: right;
+   }
+    .footer .text-white.row .col-4 {
+    display: block; /* Ensure the spacer column is visible again */
+  }
+}
+/* Optional: Base styles for better readability and spacing if not already defined */
+.Technology, .incre, .waterforall {
+  padding-top: 2rem; /* Add some padding to the top of each section */
+  padding-bottom: 2rem; /* Add some padding to the bottom of each section */
+  overflow-x: hidden; /* Prevent horizontal scroll issues */
+}
+
+.Technology h3, .incre h3, .waterforall h1, .waterforall h3 {
+  margin-bottom: 1rem; /* Space below headings */
+}
+
+.Technology p, .incre p, .waterforall p {
+  margin-bottom: 1.5rem; /* Space below paragraphs */
+  line-height: 1.6; /* Improve readability */
+}
+
+.Technology a, .incre a, .waterforall a {
+  display: inline-block; /* Allows for margin/padding on the link */
+  padding: 8px 15px;
+  background-color: #007bff; /* Example button color */
+  color: white;
+  border-radius: 4px;
+  /* text-decoration: none; already in your HTML style attribute */
+}
+
+.Technology a:hover, .incre a:hover, .waterforall a:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Extra Small devices (phones, portrait, less than 576px) */
+@media (max-width: 575.98px) {
+  .Technology .row > [class^="col-"],
+  .incre .row > [class^="col-"],
+  .waterforall .row > [class^="col-"] {
+    flex-basis: 100%; /* Make each column take full width */
+    max-width: 100%;
+    padding-left: 15px; /* Add some padding if spacers are effectively gone */
+    padding-right: 15px;
+  }
+
+  .Technology .col-1,
+  .incre .col-1,
+  .waterforall .col-1 {
+    display: none; /* Hide spacer columns on very small screens */
+  }
+
+  .Technology .col-6, .Technology .col-4,
+  .incre .col-5,
+  .waterforall .col-5 {
+    text-align: center; /* Center content when stacked */
+    margin-bottom: 20px; /* Add space between stacked items */
+  }
+
+  .Technology .col-4.pt-5,
+  .incre .col-5 .pt-5, /* Target specific column if h3 is inside another div */
+  .waterforall .col-5 .pt-5,
+  .Technology h3.pt-5,
+  .incre h3.pt-5,
+  .waterforall h1.pt-5 {
+    padding-top: 1.5rem !important; /* Reduce top padding */
+  }
+
+  .incre .col-5 h3.pt-5 { /* For the .incre section specifically if BR tags are causing too much space */
+    padding-top: 1rem !important;
+  }
+  .incre .col-5 h3 br { /* Hide line breaks on small screens if they create too much space */
+    display: none;
+  }
+
+
+  .Technology img.img-fluid,
+  .incre img.img-fluid,
+  .waterforall img.img-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Ensure image is block for centering */
+  }
+}
+
+/* Small devices (phones, landscape, 576px and up to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .Technology .row > .col-6,
+  .Technology .row > .col-4,
+  .incre .row > .col-5,
+  .waterforall .row > .col-5 {
+    flex-basis: 100%; /* Stack columns */
+    max-width: 100%;
+    text-align: center; /* Center content */
+    margin-bottom: 25px; /* Space between stacked items */
+  }
+
+  .Technology .col-1,
+  .incre .col-1,
+  .waterforall .col-1 {
+    display: none; /* Still hide spacer columns if preferred, or change their flex-basis */
+  }
+
+  .Technology .col-4.pt-5,
+  .incre .col-5 .pt-5,
+  .waterforall .col-5 .pt-5,
+  .Technology h3.pt-5,
+  .incre h3.pt-5,
+  .waterforall h1.pt-5 {
+    padding-top: 2rem !important; /* Adjust padding */
+  }
+
+  .incre .col-5 h3.pt-5 {
+    padding-top: 1rem !important;
+  }
+  .incre .col-5 h3 br {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* At this point, your col-*, col-4, col-5, col-6 classes will likely start to arrange
+   elements side-by-side as intended for larger screens.
+   You might want to re-introduce the spacer columns or make minor adjustments.
+*/
+@media (min-width: 768px) {
+  .Technology .col-1,
+  .incre .col-1,
+  .waterforall .col-1 {
+    display: block; /* Ensure spacer columns are visible again */
+  }
+
+  /* Reset text alignment if it was centered for smaller screens and you want default/left for larger */
+  .Technology .col-4,
+  .incre .col-5, /* Text column in .incre */
+  .waterforall .col-5:last-child { /* Text column in .waterforall */
+    text-align: left; /* Or whatever your default alignment is */
+  }
+
+  .Technology h3.pt-5,
+  .incre h3.pt-5,
+  .waterforall h1.pt-5 {
+    padding-top: 3rem !important; /* Restore Bootstrap's pt-5 or your desired padding */
+  }
+
+  .incre .col-5 h3 br {
+    display: inline; /* Show line breaks again */
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* /////////////////// */
+
+
